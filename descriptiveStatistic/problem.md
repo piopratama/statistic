@@ -59,10 +59,12 @@ for i in range(num_students):
 ```
 
 Before we are going any further let's jsut focus on how do we calculate some of the quantifications we mention earlier. In this case I am intrested to use GPA data. To do this we will implement python library called numpy. But before that let's understand how to calculate manually.
-Let's say we have squance of data like this:
-```
+Let's say we have squance of data like this:  
+
 x<sub>1</sub>, x<sub>2</sub>, …, x<sub>n</sub>
-```
+
+# Mean
+![Mean Formula](https://latex.codecogs.com/svg.image?\bar{x}=\frac{1}{n}\sum_{i=1})
 
 ```python
 # Calculate descriptive statistics for GPAs
