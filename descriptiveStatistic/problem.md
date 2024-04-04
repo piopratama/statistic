@@ -35,7 +35,7 @@ Let's say we have such data table.
 | 1019       | Sophia Lee         | 2             | 3.5  |
 | 1020       | Tyler Moore        | 1             | 3.1  |
 
-In case you don't want to use my data you can try to generate your own using below python code.
+In case you don't want to use my data, then you can try to generate your own using below python code (make sure you install faker using pip).
 ```python
 import numpy as np
 from faker import Faker
@@ -56,4 +56,21 @@ print("| Student ID | Name               | Year of Study | GPA  |")
 print("|------------|--------------------|---------------|------|")
 for i in range(num_students):
     print(f"| {student_ids[i]:<10} | {names[i]:<18} | {years_of_study[i]:<13} | {gpas[i]:<4} |")
+```
+
+Before we are going any further let's jsut focus on how do we calculate some of the quantifications we mention earlier. In this case I am intrested to use GPA data. To do this we will implement python library called numpy. But before that let's understand how to calculate manually.
+Let's say we have squance of data like this:
+x<sub>1</sub>, x<sub>2</sub>, …, x<sub>n</sub>
+
+
+```python
+# Calculate descriptive statistics for GPAs
+mean_gpa = np.mean(gpas)
+median_gpa = np.median(gpas)
+min_gpa = np.min(gpas)
+max_gpa = np.max(gpas)
+std_dev_gpa = np.std(gpas)
+variance_gpa = np.var(gpas)
+
+mean_gpa, median_gpa, min_gpa, max_gpa, std_dev_gpa, variance_gpa
 ```
