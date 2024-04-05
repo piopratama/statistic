@@ -57,7 +57,8 @@ Student ID,Name,Year of Study,GPA
 
 # Charts
 Chart is another common ways to explain your data. This model improve you data readability but sometimes will cause you lose some detail information in exchange of its simplicity and summarization capability. If we are talking about chart, this gonna be a broad topics as this type or representations have wide variety of type and every type has its own purpose. But here we will just state some commons chart that is used normally.
-Line Chart: Ideal for illustrating trends over time, line charts connect individual data points in a sequential manner, making it easy to observe changes and patterns. eg. Tracking the monthly sales revenue of a company throughout the year. Each point on the line represents revenue for a specific month, showing upward or downward trends.
+## Line Chart 
+Ideal for illustrating trends over time, line charts connect individual data points in a sequential manner, making it easy to observe changes and patterns. eg. Tracking the monthly sales revenue of a company throughout the year. Each point on the line represents revenue for a specific month, showing upward or downward trends.
 ```python
 import matplotlib.pyplot as plt
 
@@ -72,7 +73,8 @@ plt.show()
 ```
 
 
-Bar Chart: Utilizes bars to compare different groups or categories. With its straightforward design, it effectively communicates differences in quantities among a set of items. eg. Comparing the number of books sold by different authors in a bookstore. Each bar represents an author, and the height of the bar indicates the total sales.
+## Bar Chart
+Utilizes bars to compare different groups or categories. With its straightforward design, it effectively communicates differences in quantities among a set of items. eg. Comparing the number of books sold by different authors in a bookstore. Each bar represents an author, and the height of the bar indicates the total sales.
 ```ptyhon
 authors = ['Author A', 'Author B', 'Author C']
 books_sold = [300, 450, 150]
@@ -84,7 +86,8 @@ plt.ylabel('Books Sold')
 plt.show()
 ```
 
-Pie Chart: Represents parts of a whole as slices of a pie, making it suitable for displaying proportionate values or percentages in a dataset. eg. Showing the market share of different smartphone brands in a region. Each slice of the pie represents a brand, with the size of the slice indicating its market share.
+## Pie Chart
+Represents parts of a whole as slices of a pie, making it suitable for displaying proportionate values or percentages in a dataset. eg. Showing the market share of different smartphone brands in a region. Each slice of the pie represents a brand, with the size of the slice indicating its market share.
 ```python
 brands = ['Brand A', 'Brand B', 'Brand C']
 market_share = [40, 35, 25]
@@ -94,7 +97,8 @@ plt.title('Smartphone Market Share')
 plt.show()
 ```
 
-Scatter Plot: Deploys points on a two-dimensional plane, each representing a value. Scatter plots are excellent for identifying relationships and distributions within a dataset. eg. Analyzing the relationship between study hours and exam scores among students. Each point represents a student, with their position indicating both their study hours and exam score.
+## Scatter Plot
+Deploys points on a two-dimensional plane, each representing a value. Scatter plots are excellent for identifying relationships and distributions within a dataset. eg. Analyzing the relationship between study hours and exam scores among students. Each point represents a student, with their position indicating both their study hours and exam score.
 ```python
 study_hours = [2, 3, 4, 5, 6, 7]
 exam_scores = [75, 82, 85, 90, 92, 95]
@@ -106,7 +110,8 @@ plt.ylabel('Exam Scores')
 plt.show()
 ```
 
-Histogram: Similar to a bar chart but used for continuous data, histograms show the frequency distribution of a dataset, helping in understanding its underlying distribution. eg. Displaying the distribution of ages of participants in a survey. Each bar covers an age range, and the height shows how many participants fall into that range.
+## Histogram
+Similar to a bar chart but used for continuous data, histograms show the frequency distribution of a dataset, helping in understanding its underlying distribution. eg. Displaying the distribution of ages of participants in a survey. Each bar covers an age range, and the height shows how many participants fall into that range.
 ```python
 ages = [22, 45, 30, 35, 21, 60, 75, 40, 41, 55, 20, 34]
 
@@ -117,7 +122,8 @@ plt.ylabel('Frequency')
 plt.show()
 ```
 
-Box Plot: Offers a visual summary of several statistical measures in a dataset, including median, quartiles, and outliers. It is particularly useful for comparing distributions between groups. eg. Comparing the distribution of apartment rental prices in different neighborhoods. Each box plot represents a neighborhood, showing the median, quartiles, and any outliers in rental prices.
+## Box Plot
+Offers a visual summary of several statistical measures in a dataset, including median, quartiles, and outliers. It is particularly useful for comparing distributions between groups. eg. Comparing the distribution of apartment rental prices in different neighborhoods. Each box plot represents a neighborhood, showing the median, quartiles, and any outliers in rental prices.
 ```python
 rent_prices = [[1000, 1500, 1200, 1450, 1300], [2000, 2500, 2400, 2300, 2200], [1500, 1600, 1550, 1490, 1580]]
 
@@ -127,7 +133,8 @@ plt.ylabel('Price ($)')
 plt.show()
 ```
 
-Heatmap: Employs color coding to represent the magnitude of values in a matrix, aiding in the detection of patterns, correlations, or trends within the data. eg. Visualizing the activity levels on a website by day and hour. Each cell represents an hour in a day, colored according to the number of visitors during that time.
+## Heatmap
+Employs color coding to represent the magnitude of values in a matrix, aiding in the detection of patterns, correlations, or trends within the data. eg. Visualizing the activity levels on a website by day and hour. Each cell represents an hour in a day, colored according to the number of visitors during that time.
 ```python
 import seaborn as sns; sns.set_theme()
 import numpy as np
@@ -137,7 +144,8 @@ sns.heatmap(data, annot=True, cmap='coolwarm')
 plt.title('Website Activity Heatmap')
 plt.show()
 ```
-Area Chart: Similar to line charts but with the area below the line filled in, area charts are effective for illustrating cumulative totals over time, emphasizing volume. eg. Showing a company's revenue and expenses over time. The area under the line for each metric is filled in, highlighting the volume and the difference between the two over time.
+## Area Chart
+Similar to line charts but with the area below the line filled in, area charts are effective for illustrating cumulative totals over time, emphasizing volume. eg. Showing a company's revenue and expenses over time. The area under the line for each metric is filled in, highlighting the volume and the difference between the two over time.
 ```python
 revenue = [10, 12, 15, 18, 20, 23]
 expenses = [8, 9, 10, 11, 12, 13]
@@ -150,7 +158,8 @@ plt.legend()
 plt.show()
 ```
 
-Stacked Bar Chart: Builds on the bar chart by stacking bars on top of each other. This variant is useful for showing the total alongside the breakdown of that total into different components or categories. eg. Illustrating the total sales of a grocery store, broken down by product categories (e.g., fruits, vegetables, dairy). Each bar represents a month, with segments within the bar showing the sales contribution of each category.
+## Stacked Bar Chart
+Builds on the bar chart by stacking bars on top of each other. This variant is useful for showing the total alongside the breakdown of that total into different components or categories. eg. Illustrating the total sales of a grocery store, broken down by product categories (e.g., fruits, vegetables, dairy). Each bar represents a month, with segments within the bar showing the sales contribution of each category.
 ```ptyhon
 categories = ['Fruits', 'Vegetables', 'Dairy']
 months = ['Jan', 'Feb', 'Mar']
