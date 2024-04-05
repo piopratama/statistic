@@ -1,5 +1,6 @@
 Statistics are merely mathematical tools that don't inherently narrate a story; thus, it's essential to craft the narrative based on the data and analysis you've conducted. As technology evolves, numerous methods for data representation have emerged. However, broadly speaking, we can categorize data visualization into two primary approaches:
-1. Tables
+
+# Tables
 Tables constitute the foundational structure for data representation, organized systematically into rows and columns. This format, time-honored for its simplicity and precision, enables a meticulous examination of data. Tables are distinguished from other forms of data visualization, such as charts, by their ability to present data in its micro form. This characteristic is crucial for detailed analyses, as it prevents the obscuration of data through aggregation, thereby mitigating the risk of misinterpretation.
 In scenarios necessitating a deep dive into data for investigation or verification, tables provide an unparalleled clarity. They allow for an exhaustive inspection, ensuring that every data point can be individually examined and understood. This level of detail is essential for accuracy and in-depth analysis, offering a rigorous means to explore and interpret data.
 However, the very detail that makes tables invaluable for comprehensive analysis can also be a limitation in contexts requiring swift data overview or communication of broad trends to stakeholders. In such situations, the granularity of tables may obscure the overarching narrative or key insights, especially when time constraints or report space is limited. It is in these instances that alternative data representation methods, which offer a more aggregated view, become preferable.
@@ -54,7 +55,7 @@ Student ID,Name,Year of Study,GPA
 1020,Tyler Moore,1,3.1
 ```
 
-2. Charts
+# Charts
 Chart is another common ways to explain your data. This model improve you data readability but sometimes will cause you lose some detail information in exchange of its simplicity and summarization capability. If we are talking about chart, this gonna be a broad topics as this type or representations have wide variety of type and every type has its own purpose. But here we will just state some commons chart that is used normally.
 Line Chart: Ideal for illustrating trends over time, line charts connect individual data points in a sequential manner, making it easy to observe changes and patterns. eg. Tracking the monthly sales revenue of a company throughout the year. Each point on the line represents revenue for a specific month, showing upward or downward trends.
 ```python
