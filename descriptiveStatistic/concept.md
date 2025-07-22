@@ -118,3 +118,5 @@ Ever thought of data simulation as a research superhero? It's not just about mak
 Picture this: you're not just crunching numbers; you're going on a data adventure, searching for clues, and solving mysteries along the way. It's like being a detective in the world of data!
 But here's the coolest part: simulation isn't just for making predictions. It's also your go-to when you're low on real-world data. Whether it's because of privacy concerns, data shortages, or any other roadblocks, simulation comes to the rescue!
 So, next time you're stuck with limited data, don't panic. Dive into the world of simulation, where every data point is a new discovery, and every analysis is a thrilling journey into the unknown!
+## Manual Calculation Without Libraries
+Sometimes using libraries can hide the underlying math. The script `manual_stats.py` demonstrates how to compute the mean, median, mode, variance and standard deviation with nothing more than Python's built‑in features.
